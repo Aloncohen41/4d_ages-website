@@ -14,11 +14,10 @@
     <style id="expo-reset">
       html, body { height: 100%; }
       body { overflow: hidden; margin: 0; background: #FEFBF6; }
-      @media (prefers-color-scheme: dark) { body { background: #1d1518; } }
       #root { display: flex; height: 100%; flex: 1; }
       /* keyboard users always see where they are */
       :focus-visible { outline: 3px solid #c9577f !important; outline-offset: 2px; }
-      @media (prefers-color-scheme: dark) { :focus-visible { outline-color: #f0a6c0 !important; } }
+      html[data-theme="dark"] :focus-visible { outline-color: #f0a6c0 !important; } /* the app sets light or dark (see AppColumn) */
       /* calmer for people who ask their device for less motion */
       @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
     </style>
@@ -28,6 +27,6 @@
   <body>
     <noscript>4D Ages needs JavaScript to run. Turn it on in your browser's settings, then reload the page.</noscript>
     <div id="root"></div>
-  <script src="/_expo/static/js/web/entry-b414ce72c7ea8dbdc7b41b0c43910369-cfb6eb39.js" defer></script>
+  <script src="/_expo/static/js/web/entry-4fc49a5f2c17d12bd93ccbc038a1307b-b6b7c523.js" defer></script>
 </body>
 </html>
