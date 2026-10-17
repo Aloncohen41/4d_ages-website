@@ -12,7 +12,11 @@
     <meta property="og:description" content="Keepsake books for the ages: your child's photos, milestones and stories, made into books and videos." />
     <meta property="og:image" content="/icon-512.png" />
     <style id="expo-reset">
+      /* Hebrew is shown in Heebo (SIL Open Font License, kept on this site: see /fonts/Heebo-OFL.txt) */
+      @font-face { font-family: "Heebo"; src: url("/fonts/Heebo.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
       html, body { height: 100%; }
+      /* the site's pictures aren't dragged out by the browser (pressing and dragging a person in the family tree moves them instead) */
+      img { -webkit-user-drag: none; user-select: none; }
       body { overflow: hidden; margin: 0; background: #FEFBF6; }
       #root { display: flex; height: 100%; flex: 1; }
       /* keyboard users always see where they are */
@@ -27,6 +31,6 @@
   <body>
     <noscript>4D Ages needs JavaScript to run. Turn it on in your browser's settings, then reload the page.</noscript>
     <div id="root"></div>
-  <script src="/_expo/static/js/web/entry-fe76b1ca28a6446f2032af1fc29babd9-16b29552.js" defer></script>
+  <script src="/_expo/static/js/web/entry-51c0ffa2aa0c6e143a60213d67225492-3415ec1c.js" defer></script>
 </body>
 </html>
